@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Home from './Home';
+import Cadastro from './Cadastro';
 import Usuario from './Usuario';
 import Login from './Login';
 import axios from 'axios';
@@ -10,9 +10,9 @@ class App extends Component {
     return (
     	<BrowserRouter>
 			<Switch>
-				<Route path="/" exact={true} component={Home} />
+				<Route path="/" exact={true} component={Login} />
+				<Route path="/cadastro" component={Cadastro} />
 				<Route path="/usuario" component={Usuario} />
-				<Route path="/login" component={Login} />
 			</ Switch>
 		</ BrowserRouter>
     );

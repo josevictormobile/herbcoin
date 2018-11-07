@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './Estilo/Login.css';
+import {Link} from 'react-router-dom';
+import './Estilo/Home.css';
 
 class Login extends Component {
   render() {
@@ -14,7 +15,8 @@ class Login extends Component {
 		        <div className="checkbox">
 		          <label for="inputRemember">Lembre-me</label><input type="checkbox" value="remember-me" id="inputRemember" /> 
 		        </div>
-		        <button className="btn btn-lg btn-success btn-block" type="submit">Entrar</button>
+		        <button className="btn btn-lg btn-success btn-block" type="submit">Entre</button>
+		        <div className="link"><Link to="/cadastro" className="btn-link">ou Cadastra-se aqui</Link></div>
 	      	</form>
     	</div>
     );

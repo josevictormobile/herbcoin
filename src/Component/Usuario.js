@@ -22,11 +22,22 @@ class Usuario extends Component {
 
   render() {
     return (
-    	<div>
-    		<p><label>Code: </label>{this.state.code}</p>
-    		<p><label>Nome: </label>{this.state.nome}</p>
-    		<p><label>Herbcoins: </label>{this.state.herbcoin}</p>
-    	</div>
+    	<div className="container">
+    	<div className="panel panel-success">
+	        <div class="panel-heading">
+	            <h1 className="panel-title">Queyla</h1>
+	        </div>
+	        <div className="panel-body">
+	        	Código: 001
+	        </div>
+	        <div className="panel-body">
+	        	Herbcoins: <h1 className="h1-r"><label className="label label-success">H$ 500</label></h1>
+	        </div>
+	        <div className="btn-transferir">
+	        	<button className="btn btn-lg btn-success btn-block">Transferir</button>
+	        </div>
+        </div>
+        </div>
     );
   }
 }
